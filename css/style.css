@@ -65,3 +65,7 @@ body{
     height: 40px;
     background: rgba(23, 23, 23, 0.6);
 }
+.anime_slider{
+    width: 100%;
+    height: fit-content ;
+}
