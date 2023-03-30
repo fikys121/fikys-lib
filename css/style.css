@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -68,4 +69,48 @@ body{
 .anime_slider{
     width: 100%;
     height: fit-content ;
+}
+.swiper-slide.main-slide{
+    width: 300px;
+    height: 200px;  
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main-slide__text{
+    /* position: relative;
+    z-index: 1; */
+    padding: 12px 20px 12px 20px;
+    display: block;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+
+}
+.main-slide__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.main-slide__rate{
+    margin: 16px 16px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    background: rgba(37, 37, 37, 0.8);
+}
+.main-slide__rate.good{
+    color: #34D073;
+}
+.main-slide__rate.medium{
+    color: #ECE42D;
+}
+.main-slide__rate.bad{
+    color: #EF3636;
 }
